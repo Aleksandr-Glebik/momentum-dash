@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum-dash</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="jsClock" class="clock">
+      <h1 class="clock__title">00:00</h1>
+      <h2 class="clock__date">09.12.2021</h2>
+    </div>
+    <div class="weather__container">
+      <div class="weather__item">
+        <div class="displayWeather" id="js-weather">
+          <!-- <h2 class="displayWeather__place">Красносельск</h2>
+                <p class="displayWeather__desc">облачно</p>
+                <p class="displayWeather__wind">3 м / с</p>
+                <p class="displayWeather__temp">-10 С</p> -->
+        </div>
+        <button class="btn btnWeather" id="js-btnWeather">
+          Изменить город
+        </button>
+        <form id="js-formInputWeather">
+          <input
+            type="text"
+            class="input inputWeather hide"
+            id="js-inputWeather"
+            placeholder="Введите город"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="container__todo">
+      <form id="js-toDoForm">
+        <input
+          id="js-toDoInput"
+          type="text"
+          placeholder="Добавьте задачу на сегодня"
+          class="input"
+        />
+      </form>
+      <ul id="js-toDoList"></ul>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="bg.js"></script>
+    <script src="clock.js"></script>
+    <script src="weather.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
